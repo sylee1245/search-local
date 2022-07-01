@@ -58,3 +58,7 @@
 - spring-boot-starter-data-jpa: 자바표준 ORM 프레임워크 라이브러리 
 - spring-restdocs-mockmvc: RESTful API 명세 문서 자동화
 - h2: 검색 키워드 Top10 목록 조회 서비스를 위해 키워드별 count를 저장할 인메모리 DB
+
+## 개발 환경
+JDK: jdk-11.0.15.10-hotspot
+
