@@ -45,7 +45,7 @@
 - `JPA`를 사용함으로서 간단한 CRUD 작업으로 `생산성` 고려
 - 각 서비스에 대하여 `테스트 코드` 작성하여 `유지보수` 고려
 - Spring Docs를 이용한 요청 RESTful API 명세하여 `생산성` 및 `유지보수` 고려
-  ( [index.adoc](/src/docs/asciidoc/index.adoc))
+  ([index.adoc](/src/docs/asciidoc/index.adoc))
 ##  API 테스트
 ```bash
 /api-requests.http
@@ -58,3 +58,7 @@
 - spring-boot-starter-data-jpa: 자바표준 ORM 프레임워크 라이브러리 
 - spring-restdocs-mockmvc: RESTful API 명세 문서 자동화
 - h2: 검색 키워드 Top10 목록 조회 서비스를 위해 키워드별 count를 저장할 인메모리 DB
+
+## 개발 환경
+JDK: jdk-11.0.15.10-hotspot
+
