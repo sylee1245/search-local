@@ -45,7 +45,7 @@
 - `JPA`를 사용함으로서 간단한 CRUD 작업으로 `생산성` 고려
 - 각 서비스에 대하여 `테스트 코드` 작성하여 `유지보수` 고려
 - Spring Docs를 이용한 요청 RESTful API 명세하여 `생산성` 및 `유지보수` 고려
-  ( [index.adoc](/src/docs/asciidoc/index.adoc))
+  ([index.adoc](/src/docs/asciidoc/index.adoc))
 ##  API 테스트
 ```bash
 /api-requests.http
