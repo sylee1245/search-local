@@ -18,6 +18,7 @@ server:
       prefix: access_log
       file-date-format: .yyyy-MM-dd
       pattern: '%{yyyy-MM-dd HH:mm:ss}t %s %r %{User-Agent}i %{Referer}i %{body_bytes_sent}i %a %b %D'
+  port: 20034
 
 spring:
   application:
