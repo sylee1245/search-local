@@ -1,0 +1,14 @@
+### 장소 검색 ("status": 200)
+GET http://localhost:8080/search-local/search?keyword=곱창
+
+### 장소 검색 - parameter가 없는 경우 ("status": 400)
+GET http://localhost:8080/search-local/search
+
+### 장소 검색 - 키워드가 공백 경우 ("status": 400)
+GET http://localhost:8080/search-local/search?keyword=
+
+### 장소 검색 - 50자가 넘은 경우 ("status": 400)
+GET http://localhost:8080/search-local/search?keyword=일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사오육칠팔구십일
+
+### 검색 키워드 Top10 목록 ("status": 200)
+GET http://localhost:8080/search-local/search/top

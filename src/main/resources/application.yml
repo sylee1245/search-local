@@ -1,0 +1,54 @@
+server:
+  servlet:
+    context-path: /search-local
+    encoding:
+      charset: UTF-8
+      force: true
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: never
+    include-exception: false
+  tomcat:
+    basedir: .
+    accesslog:
+      enabled: true
+      directory: logs
+      suffix: .log
+      prefix: access_log
+      file-date-format: .yyyy-MM-dd
+      pattern: '%{yyyy-MM-dd HH:mm:ss}t %s %r %{User-Agent}i %{Referer}i %{body_bytes_sent}i %a %b %D'
+
+spring:
+  application:
+    name: search-local
+  profiles:
+    active: '#spring.profiles.active#'
+    group:
+      test:
+        - test
+      dev:
+        - dev
+      prod:
+        - prod
+  datasource:
+    url: jdbc:h2:mem:mydb;mode=MYSQL
+    driver-class-name: org.h2.Driver
+    username: searchLocal
+    password: sl135@@
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+application:
+  client:
+    kakao:
+      token: 'KakaoAK 150047a9e9cb6aadbaf30250228b0a45'
+      url: 'https://dapi.kakao.com/'
+    naver:
+      clientId: '2HyDEqE_kgoKy1Pf20Pi'
+      clientSecret: 'jR3WDSnIQZ'
+      url: 'https://openapi.naver.com/'
